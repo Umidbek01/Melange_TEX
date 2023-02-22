@@ -1,0 +1,396 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    color: white;
+    font-family: Roboto;
+}
+
+/* Анимации */
+
+@-webkit-keyframes rollinCot {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rollinCot {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes reverserollinCot {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(-360deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes reverserollinCot {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(-360deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes heartBeat {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes heartBeat {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    14% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+    28% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    42% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3)
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes rubberBand {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, .75, 1);
+        transform: scale3d(1.25, .75, 1)
+    }
+    40% {
+        -webkit-transform: scale3d(.75, 1.25, 1);
+        transform: scale3d(.75, 1.25, 1)
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, .85, 1);
+        transform: scale3d(1.15, .85, 1)
+    }
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1)
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1)
+    }
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+@keyframes rubberBand {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, .75, 1);
+        transform: scale3d(1.25, .75, 1)
+    }
+    40% {
+        -webkit-transform: scale3d(.75, 1.25, 1);
+        transform: scale3d(.75, 1.25, 1)
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, .85, 1);
+        transform: scale3d(1.15, .85, 1)
+    }
+    65% {
+        -webkit-transform: scale3d(.95, 1.05, 1);
+        transform: scale3d(.95, 1.05, 1)
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, .95, 1);
+        transform: scale3d(1.05, .95, 1)
+    }
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../img/cotton/cottonPattern.svg')
+}
+
+.wrapper .logo-part {
+    margin: 0 auto;
+}
+
+.wrapper .logo-part .logo {
+    padding: 0px 35px 0px 35px;
+}
+
+.wrapper .logo-part .logo img {
+    width: 500px;
+    transition: 2s;
+}
+
+.wrapper .logo-part .logo img:hover {
+    transform: perspective(0px) rotateY(30deg);
+    transition: 1s;
+}
+
+.wrapper .logo-part .lng-selectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.wrapper .logo-part .lng-selectors div {
+    margin: 10px 10px 0px 10px;
+    width: 60px;
+    height: 60px;
+    /* border-radius: 50%; */
+    /* padding: 15px; */
+    /* background-color: #952301; */
+}
+.ru{
+    background: url(../img/catalog/ru.svg);
+}
+.en{
+    background: url(../img/catalog/en.svg);
+}
+.uz{
+    background: url(../img/catalog/uz.svg);
+}
+.ru p, .uz p, .en p{
+    display: none;
+}
+
+.wrapper .logo-part .lng-selectors div p:hover{
+cursor: pointer;
+}
+
+
+/*Квадраты*/
+
+.wrapper .left-sqr {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 0px 0px 800px 0px;
+    width: 40vh;
+    height: 30vh;
+    background-color: #952301;
+}
+
+.wrapper .left-sqr:hover {
+    animation-name: heartBeat;
+    animation-duration: 2s;
+}
+
+.wrapper .right-sqr:hover {
+    animation-name: heartBeat;
+    animation-duration: 2s;
+}
+
+.wrapper .right-sqr {
+    position: absolute;
+    border-radius: 800px 0px 0px 0px;
+    bottom: 0%;
+    right: 0%;
+    width: 40vh;
+    height: 30vh;
+    background-color: #b18a01;
+}
+
+/*Хлопки*/
+
+.cottons .leftdowncotton {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    width: 150px;
+    animation-name: reverserollinCot;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.cottons .righttopcotton {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    width: 150px;
+    animation-name: rollinCot;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.cottons .middlecotton {
+    position: absolute;
+    width: 110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(80%, -130%);
+}
+
+/* адаптация */
+
+@media only screen and (max-width:640px){
+    .wrapper .left-sqr{
+        width: 30vh;
+        height: 20vh;
+    }
+    .wrapper .right-sqr{
+        width: 30vh;
+        height: 20vh;
+    }
+    .wrapper .logo-part .logo img{
+        width: 400px;
+    }
+    .cottons .leftdowncotton{
+        width: 8em;
+    }
+    .cottons .righttopcotton{
+        width: 8em;
+    }
+    .cottons .middlecotton{
+        width: 6em;
+    }
+}
+@media only screen and (max-width:468px){
+    .wrapper .left-sqr{
+        width: 20vh;
+        height: 12vh;
+    }
+    .wrapper .right-sqr{
+        width: 20vh;
+        height: 12vh;
+    }
+    .wrapper .logo-part .logo img{
+        width: 20rem;
+    }
+    .cottons .leftdowncotton{
+        width: 7em;
+    }
+    .cottons .righttopcotton{
+        width: 7em;
+    }
+    .cottons .middlecotton{
+        width: 5em;
+    }
+    .wrapper .logo-part .lng-selectors div{
+        width: 3.5em;
+        height: 3.5em;
+    }
+}
+@media only screen and (max-width:375px){
+    .wrapper .logo-part .logo img{
+        width: 16rem;
+    }
+    .cottons .leftdowncotton{
+        width: 6em;
+    }
+    .cottons .righttopcotton{
+        width: 6em;
+    }
+    .cottons .middlecotton{
+        width: 4.5em;
+    }
+    .wrapper .logo-part .lng-selectors div{
+        width: 3em;
+        height: 3em;
+    }
+}
+@media only screen and (max-width:320px){
+    .wrapper .left-sqr{
+        width: 20vh;
+        height: 12vh;
+    }
+    .wrapper .right-sqr{
+        width: 20vh;
+        height: 12vh;
+    }
+    .wrapper .logo-part .logo img{
+        width: 16rem;
+    }
+    .cottons .leftdowncotton{
+        width: 4em;
+    }
+    .cottons .righttopcotton{
+        width: 4em;
+    }
+    .cottons .middlecotton{
+        width: 4.5em;
+        top:45%;
+        left: 60%;
+    }
+    .wrapper .logo-part .lng-selectors div{
+        width: 3em;
+        height: 3em;
+    }
+}

@@ -1,0 +1,113 @@
+#scroller_container
+{
+    position: relative;   
+    margin: 0;
+    overflow: hidden;
+}
+
+#scroller {
+    white-space: nowrap;
+    font-size: 0.75rem;
+}
+
+#ifc_widgetlivequotes_scrl {
+    width: 100%;
+    position: relative;
+}
+
+.live_quotations{
+    border: 1px solid #77ba88;
+    box-sizing: border-box;
+    height: 30px;
+    width: 100%;
+    margin: 0px auto 3px auto !important;
+    background-color: white;
+    overflow: hidden;
+
+}
+
+#scroller_container.live_quotations ul{	
+    height: 28px;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#scroller .live_quotations ul li{
+    font-weight: bold;
+    height: 100%;
+    line-height: 30px !important;
+}
+
+.live_quotations ul li	{
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #5c5c5c;
+    height: 100%;
+    line-height: 30px !important;
+    margin: 0 auto;
+    padding-right: 5px;
+    text-align: left;
+}
+
+.live_quotations ul li img{
+    float:left;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-right: 5px
+}
+
+.course_up p	{
+    float:left;
+    margin-left: 0px;
+    margin-right: 6px;
+    margin-top: 0px;
+    line-height: 30px;
+    color: #126320;
+    font-size: 0.75rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.course_down p	{
+    float:left;
+    margin-left: 0px;
+    margin-right: 6px;
+    margin-top: 0px;
+    line-height: 30px;
+    color: #ff0d00;
+    font-size: 0.75rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.course_nochange p{
+    float: left;
+    margin-left: 0px !important;
+    margin-right: 6px !important;
+    margin-top: 0px !important;
+    line-height: 30px !important;
+    color: #9f9f9f;
+    font-size: 0.75rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#ifc_nedlivequotes_scrl {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#ifc_nedlivequotes_scrl a {
+    overflow: hidden;
+    position: absolute;
+    top: -30px;
+}
+
+
+.quotesline_gg_container {
+    border: 1px solid #77ba88 !important;
+}
